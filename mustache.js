@@ -212,7 +212,7 @@ var Mustache = function() {
 
       // Checks whether a value is thruthy or false or 0
       function is_kinda_truthy(bool) {
-        return bool === false || bool === 0 || bool;
+        return bool === false || bool === 0 || bool === null || bool;
       }
 
       var value;
